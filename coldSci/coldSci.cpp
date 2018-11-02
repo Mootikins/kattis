@@ -2,20 +2,20 @@
 
 using namespace std;
 
-int main(int argc, char *argv[])
+int main ( int argc, char* argv[] )
 {
-    int temp, noTemps;
-    int neg = 0;
+	int temp, noTemps;
+	int neg = 0;
 
-    cin >> noTemps;
+	cin >> noTemps;
 
-    for (int i = 0; i < noTemps; ++i) {
-        cin >> temp;
-        if (temp < 0) {
-            neg++;
-        }
-    }
-    
-    cout << neg;
-    return 0;
+	for ( int i = 0; i < noTemps; ++i ) {
+		cin >> temp;
+
+		if ( temp < 0 )
+			neg++;
+	}
+
+	cout << neg;
+	return 0;
 }

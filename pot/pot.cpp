@@ -3,20 +3,20 @@
 
 using namespace std;
 
-int main(int argc, char *argv[])
+int main ( int argc, char* argv[] )
 {
-    long long int nums, curr, power, sum = 0;
+	long long int nums, curr, power, sum = 0;
 
-    cin >> nums;
+	cin >> nums;
 
-    for (int i = 0; i < nums; ++i) {
-        cin >> curr;
-        power = curr % 10;
+	for ( int i = 0; i < nums; ++i ) {
+		cin >> curr;
+		power = curr % 10;
 
-        curr = floor(curr/10);
-        sum += pow(curr, power);
-    }
+		curr = floor ( curr/10 );
+		sum += pow ( curr, power );
+	}
 
-    cout << sum;
-    return 0;
+	cout << sum;
+	return 0;
 }

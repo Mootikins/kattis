@@ -2,17 +2,16 @@
 
 using namespace std;
 
-int main(int argc, char *argv[])
+int main ( int argc, char* argv[] )
 {
-    int junc, switches;
+	int junc, switches;
 
-    cin >> junc >> switches;
+	cin >> junc >> switches;
 
-    if (switches % 2 == 0) {
-        cout << "possible";
-    }
-    else {
-        cout << "impossible";
-    }
-    return 0;
+	if ( switches % 2 == 0 )
+		cout << "possible";
+	else
+		cout << "impossible";
+
+	return 0;
 }
