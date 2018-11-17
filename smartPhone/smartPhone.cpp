@@ -3,15 +3,15 @@
 
 using namespace std;
 
-int main(int argc, char *argv[])
+int main ( int argc, char* argv[] )
 {
-    string des, input, sug1, sug2, sug3;
-    int cases;
+	string des, input, sug1, sug2, sug3;
+	int cases;
 
-    cin >> cases;
+	cin >> cases;
 
-    for (int i = 0; i < cases; ++i) {
-        cin >> des >> input >> sug1 >> sug2 >> sug3;
-    }
-    return 0;
+	for ( int i = 0; i < cases; ++i )
+		cin >> des >> input >> sug1 >> sug2 >> sug3;
+
+	return 0;
 }

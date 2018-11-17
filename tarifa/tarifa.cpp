@@ -2,19 +2,19 @@
 
 using namespace std;
 
-int main(int argc, char *argv[])
+int main ( int argc, char* argv[] )
 {
-    int MB, currMB, mos, currMo;
+	int MB, currMB, mos, currMo;
 
-    cin >> MB >> mos;
+	cin >> MB >> mos;
 
-    currMB = MB;
+	currMB = MB;
 
-    for (int i = 0; i < mos; ++i) {
-        cin >> currMo;
-        currMB -= currMo - MB;
-    }
+	for ( int i = 0; i < mos; ++i ) {
+		cin >> currMo;
+		currMB -= currMo - MB;
+	}
 
-    cout << currMB;
-    return 0;
+	cout << currMB;
+	return 0;
 }

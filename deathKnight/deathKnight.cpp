@@ -2,26 +2,25 @@
 
 using namespace std;
 
-int main(int argc, char *argv[])
+int main ( int argc, char* argv[] )
 {
-    int battles;
-    string abil;
+	int battles;
+	string abil;
 
-    cin >> battles;
+	cin >> battles;
 
-    int won = battles;
+	int won = battles;
 
-    for (int i = 0; i < battles; ++i) {
-        cin >> abil;
+	for ( int i = 0; i < battles; ++i ) {
+		cin >> abil;
 
-        for (int j = 0; j < abil.size() - 1; j++) {
-            if (abil.at(j) == 'C' && abil.at(j+1) == 'D') {
-                won--;
-            }
-        }
-    }
+		for ( int j = 0; j < abil.size() - 1; j++ ) {
+			if ( abil.at ( j ) == 'C' && abil.at ( j+1 ) == 'D' )
+				won--;
+		}
+	}
 
-    cout << won;
+	cout << won;
 
-    return 0;
+	return 0;
 }

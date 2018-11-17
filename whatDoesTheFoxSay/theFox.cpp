@@ -4,24 +4,24 @@
 
 using namespace std;
 
-int int main(int argc, char *argv[])
+int int main ( int argc, char* argv[] )
 {
-    string recording;
-    int cases;
-    vector<string> sounds;
-    string currsound;
+	string recording;
+	int cases;
+	vector<string> sounds;
+	string currsound;
 
-    cin >> cases;
+	cin >> cases;
 
-    for (i = 0; i < cases; i++) {
-        getline(cin,recording);
-        while(currsound != "the")
-        {
-            cin >> currsound;
-            cin >> currsound;
-            cin >> currsound;
-        }
-    }
+	for ( i = 0; i < cases; i++ ) {
+		getline ( cin,recording );
 
-    return 0;
+		while ( currsound != "the" ) {
+			cin >> currsound;
+			cin >> currsound;
+			cin >> currsound;
+		}
+	}
+
+	return 0;
 }
