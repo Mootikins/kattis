@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main ( int argc, char* argv[] )
-{
+int main( int argc, char* argv[] ) {
 	int MB, currMB, mos, currMo;
 
 	cin >> MB >> mos;

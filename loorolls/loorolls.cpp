@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(int argc, const char *argv[])
-{
+int main( int argc, const char *argv[] ) {
 	long long int length, origLength, n, origN, rolls = 1;
 
 	cin >> origLength >> origN;

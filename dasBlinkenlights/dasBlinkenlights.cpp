@@ -2,15 +2,14 @@
 
 using namespace std;
 
-int main ( int argc, char* argv[] )
-{
+int main( int argc, char* argv[] ) {
 	int a, b, time;
 
 	cin >> a >> b >> time;
 
-	int big = max ( a,b );
+	int big = max( a, b );
 
-	int small = min ( a,b );
+	int small = min( a, b );
 
 	a = big;
 

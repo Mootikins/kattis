@@ -5,8 +5,7 @@ struct person {
 	std::string name;
 };
 
-int main(int argc, char *argv[])
-{
+int main( int argc, char *argv[] ) {
 	int num_people, connections, days;
 	std::cin >> num_people >> connections >> days;
 

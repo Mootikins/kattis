@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main ( int argc, char* argv[] )
-{
+int main( int argc, char* argv[] ) {
 	long long int kids, tests, currKid;
 	long long int candies;
 
@@ -18,7 +17,7 @@ int main ( int argc, char* argv[] )
 			candies += currKid;
 		}
 
-		if ( abs ( candies % kids ) <= 0.05 )
+		if ( abs( candies % kids ) <= 0.05 )
 			cout << "YES" << endl;
 		else
 			cout << "NO" << endl;

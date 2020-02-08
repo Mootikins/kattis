@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main ( int argc, char* argv[] )
-{
+int main( int argc, char* argv[] ) {
 	int king, queen, rook, bishop, knight, pawn;
 
 	cin >> king >> queen >> rook >> bishop >> knight >> pawn;

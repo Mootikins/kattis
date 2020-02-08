@@ -1,11 +1,10 @@
 #include <bits/stdc++.h>
 
-int main(int argc, const char *argv[])
-{
+int main( int argc, const char *argv[] ) {
 	int div1, div2, upperBound;
 	std::cin >> div1 >> div2 >> upperBound;
 
-	for (int i = 1; i <= upperBound; i++) {
+	for ( int i = 1; i <= upperBound; i++ ) {
 		std::string output;
 		if ( !( i % div1 ) ) {
 			output += "Fizz";
@@ -15,8 +14,7 @@ int main(int argc, const char *argv[])
 		}
 		if ( output.empty() ) {
 			std::cout << i << std::endl;
-		}
-		else {
+		} else {
 			std::cout << output << std::endl;
 		}
 	}

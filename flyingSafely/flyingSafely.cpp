@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main ( int argc, char* argv[] )
-{
+int main( int argc, char* argv[] ) {
 	int cases, num1, num2;
 
 	cin >> cases;
@@ -13,8 +12,7 @@ int main ( int argc, char* argv[] )
 		cout << num1 - 1 << endl;
 		cin >> num1;
 
-		for ( int j = 0; j < num1; ++j )
-			cin >> num2 >> num2;
+		for ( int j = 0; j < num1; ++j ) cin >> num2 >> num2;
 	}
 
 	return 0;

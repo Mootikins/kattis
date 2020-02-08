@@ -1,12 +1,11 @@
+#include <algorithm>
+#include <iostream>
 #include <string>
 #include <vector>
-#include <iostream>
-#include <algorithm>
 
 using namespace std;
 
-int main ( int argc, char* argv[] )
-{
+int main( int argc, char* argv[] ) {
 	int cases, ropes;
 	cin >> cases;
 
@@ -20,15 +19,14 @@ int main ( int argc, char* argv[] )
 		for ( int j = 0; j < ropes; ++j ) {
 			cin >> currRope;
 
-			if ( currRope[currRope.length()-1] == 'B' ) {
+			if ( currRope[currRope.length() - 1] == 'B' ) {
 				currRope.pop_back();
-				int ropelen = stoi ( currRope )-1;
-				blue.push_back ( ropelen );
-			}
-			else if ( currRope[currRope.length()-1] == 'R' ) {
+				int ropelen = stoi( currRope ) - 1;
+				blue.push_back( ropelen );
+			} else if ( currRope[currRope.length() - 1] == 'R' ) {
 				currRope.pop_back();
-				int ropelen = stoi ( currRope )-1;
-				red.push_back ( ropelen );
+				int ropelen = stoi( currRope ) - 1;
+				red.push_back( ropelen );
 			}
 		}
 	}

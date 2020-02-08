@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main ( int argc, char* argv[] )
-{
+int main( int argc, char* argv[] ) {
 	int battles;
 	string abil;
 
@@ -15,8 +14,7 @@ int main ( int argc, char* argv[] )
 		cin >> abil;
 
 		for ( int j = 0; j < abil.size() - 1; j++ ) {
-			if ( abil.at ( j ) == 'C' && abil.at ( j+1 ) == 'D' )
-				won--;
+			if ( abil.at( j ) == 'C' && abil.at( j + 1 ) == 'D' ) won--;
 		}
 	}
 

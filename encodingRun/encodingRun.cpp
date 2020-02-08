@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main ( int argc, char* argv[] )
-{
+int main( int argc, char* argv[] ) {
 	char coding;
 	cin >> coding;
 	string str;
@@ -16,18 +15,15 @@ int main ( int argc, char* argv[] )
 			if ( str[i] != str[i - 1] ) {
 				cout << str[i - 1] << count;
 				count = 1;
-			}
-			else
+			} else
 				count++;
 		}
 
 		cout << str[str.length() - 1] << count;
 		cout << endl;
-	}
-	else {
+	} else {
 		for ( int i = 0; i < str.length(); i += 2 ) {
-			for ( int j = 0; j < str[i + 1] - '0'; j++ )
-				cout << str[i];
+			for ( int j = 0; j < str[i + 1] - '0'; j++ ) cout << str[i];
 		}
 
 		cout << endl;

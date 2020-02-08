@@ -1,10 +1,9 @@
-#include <string>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-int main ( int argc, char* argv[] )
-{
+int main( int argc, char* argv[] ) {
 	int flips;
 	string first, second;
 
@@ -13,7 +12,7 @@ int main ( int argc, char* argv[] )
 	if ( flips % 2 == 0 && first == second )
 		cout << "Deletion succeeded";
 	else {
-		for ( int i = 0; i < first.size() ; ++i ) {
+		for ( int i = 0; i < first.size(); ++i ) {
 			if ( first[i] == second[i] ) {
 				cout << "Deletion failed";
 				return 0;

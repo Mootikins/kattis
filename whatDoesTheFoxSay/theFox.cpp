@@ -1,11 +1,10 @@
 #include <iostream>
-#include <vector>
 #include <string>
+#include <vector>
 
 using namespace std;
 
-int int main ( int argc, char* argv[] )
-{
+int int main( int argc, char* argv[] ) {
 	string recording;
 	int cases;
 	vector<string> sounds;
@@ -14,7 +13,7 @@ int int main ( int argc, char* argv[] )
 	cin >> cases;
 
 	for ( i = 0; i < cases; i++ ) {
-		getline ( cin,recording );
+		getline( cin, recording );
 
 		while ( currsound != "the" ) {
 			cin >> currsound;

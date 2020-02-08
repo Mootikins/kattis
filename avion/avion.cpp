@@ -2,24 +2,22 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
 	vector<int> blimps;
-	for (int i = 0; i < 5; i++) {
+	for ( int i = 0; i < 5; i++ ) {
 		string name;
 		cin >> name;
-		if (name.find("FBI") != -1) {
-			blimps.push_back(i + 1);
+		if ( name.find( "FBI" ) != -1 ) {
+			blimps.push_back( i + 1 );
 		}
 	}
 
-	if (blimps.size() == 0) {
+	if ( blimps.size() == 0 ) {
 		cout << "HE GOT AWAY!" << endl;
-	}
-	else {
-		for (int i = 0; i < blimps.size(); i++) {
+	} else {
+		for ( int i = 0; i < blimps.size(); i++ ) {
 			cout << blimps[i];
-			if (i != blimps.size() - 1) {
+			if ( i != blimps.size() - 1 ) {
 				cout << " ";
 			}
 		}

@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main ( int argc, char* argv[] )
-{
+int main( int argc, char* argv[] ) {
 	int cases, no1, no2, no3;
 
 	cin >> cases;
@@ -17,7 +16,7 @@ int main ( int argc, char* argv[] )
 			cout << "Possible" << endl;
 		else if ( no1 + no2 == no3 )
 			cout << "Possible" << endl;
-		else if ( double ( no1 ) / no2 == no3 || double ( no2 ) / no1 == no3 )
+		else if ( double( no1 ) / no2 == no3 || double( no2 ) / no1 == no3 )
 			cout << "Possible" << endl;
 		else if ( no1 * no2 == no3 )
 			cout << "Possible" << endl;

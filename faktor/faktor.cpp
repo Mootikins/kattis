@@ -1,10 +1,9 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
 using namespace std;
 
-int main ( int argc, char* argv[] )
-{
+int main( int argc, char* argv[] ) {
 	int pub, impact;
 
 	cin >> pub >> impact;
@@ -12,7 +11,7 @@ int main ( int argc, char* argv[] )
 	if ( pub > 1 )
 		cout << ( impact - 1 ) * pub + 1;
 	else
-		cout << pub* impact;
+		cout << pub * impact;
 
 	return 0;
 }

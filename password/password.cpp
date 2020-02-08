@@ -2,14 +2,13 @@
 
 using namespace std;
 
-int main(int argc, const char *argv[])
-{
+int main( int argc, const char *argv[] ) {
 	int size;
 	cin >> size;
 
 	vector<double> passwords;
 
-	for (int i = 0; i < size; i++) {
+	for ( int i = 0; i < size; i++ ) {
 		string junk;
 		double probability;
 
@@ -18,11 +17,11 @@ int main(int argc, const char *argv[])
 		passwords.push_back( probability );
 	}
 
-	sort(passwords.begin(), passwords.end(), greater<double>());
+	sort( passwords.begin(), passwords.end(), greater<double>() );
 
 	double probability = 0;
 
-	for (int i = 0; i < passwords.size(); i++) {
+	for ( int i = 0; i < passwords.size(); i++ ) {
 		probability += ( i + 1 ) * passwords[i];
 	}
 

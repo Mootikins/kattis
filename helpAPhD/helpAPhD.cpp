@@ -2,11 +2,10 @@
 #include <string>
 
 using namespace std;
-int main ( int argc, char* argv[] )
-{
+int main( int argc, char* argv[] ) {
 	int cases, num1, num2;
 	string prob, currNum;
-	bool first=true;
+	bool first = true;
 
 	cin >> cases;
 
@@ -17,8 +16,7 @@ int main ( int argc, char* argv[] )
 			cout << "skipped" << endl;
 		else {
 			for ( int j = 0; j < prob.length(); ++j ) {
-				if ( prob.at ( j ) == '+' && first )
-					num1 = atoi ( currNum.c_str() );
+				if ( prob.at( j ) == '+' && first ) num1 = atoi( currNum.c_str() );
 			}
 		}
 	}

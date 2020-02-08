@@ -1,21 +1,19 @@
-#include <string>
 #include <iostream>
+#include <string>
 #include <vector>
 
 using namespace std;
 
-int main ( int argc, char* argv[] )
-{
+int main( int argc, char* argv[] ) {
 	int instr, r0, r1;
 	string currInstr;
 
 	while ( cin >> instr ) {
-		if ( instr == 0 )
-			return 0;
+		if ( instr == 0 ) return 0;
 
-		int bits[32] = { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
-		                 -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1
-		               };
+		int bits[32] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+		                -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+		                -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
 
 		for ( int i = 0; i < instr; ++i ) {
 			cin >> currInstr;
@@ -23,12 +21,10 @@ int main ( int argc, char* argv[] )
 			if ( currInstr == "CLEAR" ) {
 				cin >> r0;
 				bits[r0] = 0;
-			}
-			else if ( currInstr == "SET" ) {
+			} else if ( currInstr == "SET" ) {
 				cin >> r0;
 				bits[r0] = 1;
-			}
-			else if ( currInstr == "OR" ) {
+			} else if ( currInstr == "OR" ) {
 				cin >> r0 >> r1;
 
 				if ( bits[r0] == 1 || bits[r1] == 1 )
@@ -37,16 +33,15 @@ int main ( int argc, char* argv[] )
 					bits[r0] = -1;
 				else
 					bits[r0] = 0;
-			}
-			else if ( currInstr == "AND" ) {
+			} else if ( currInstr == "AND" ) {
 				cin >> r0 >> r1;
 
 				if ( bits[r0] == 0 || bits[r1] == 0 )
 					bits[r0] = 0;
 				else if ( bits[r0] == 1 && bits[r1] == 1 )
 					bits[r0] == 1;
-				else if ( bits[r0] == 1 && bits[r1] == -1
-				          || bits[r1] == 1 && bits[r0] == -1 )
+				else if ( bits[r0] == 1 && bits[r1] == -1 ||
+				          bits[r1] == 1 && bits[r0] == -1 )
 					bits[r0] = -1;
 			}
 		}

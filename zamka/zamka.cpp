@@ -2,9 +2,8 @@
 
 using namespace std;
 
-int main ( int argc, char* argv[] )
-{
-	int l,d,n,m,x;
+int main( int argc, char* argv[] ) {
+	int l, d, n, m, x;
 
 	cin >> l >> d >> x;
 	bool found;
